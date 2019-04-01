@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "TabCloser",
+    "version": "1.0",
+
+    "description": "A batch tab closer for Firefox",
+
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "tabcloser@leshoux.eu",
+			"strict_min_version": "57.0"
+		}
+	},
+
+    "permissions": [
+	    "activeTab",
+	    "tabs"
+    ], 
+
+    "browser_action": {
+		"default_icon": "icons/tabcloser-32.png",
+		"default_title": "TabCloser",
+		"default_popup": "popup/tabcloser.html",
+		"browser_style": true
+    }
+}
